@@ -1,0 +1,45 @@
+﻿@model List<Blog>
+
+<div class="container mt-5">
+    <div class="create-category">
+        <a asp-action="Create" class="btn btn-success text-white" style="font-size: 30px; width: 120px;">+</a>
+
+    </div>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>
+                        Blogs
+                    </th>
+                    <th>
+                        Operations
+                    </th>
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+
+                {
+                    <tr>
+                        <td class="py-1">
+
+                            @item.Title
+                        </td>
+                        <td>
+                            <a class="btn btn-info text-white" asp-action="Detail" asp-route-id="@item.Id"><i class="mdi mdi-information-variant text-white"></i></a>
+                            <a class="btn btn-warning"><i class="mdi mdi-table-edit text-white"></i></a>
+                            <form class="forms-sample d-inline" method="post" asp-action="Delete">
+
+                                <button type="submit" class="btn btn-danger"><i class="mdi mdi-delete text-white"></i></button>
+                                </form>
+                        </td>
+
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+    </div>
+</div>

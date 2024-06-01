@@ -1,0 +1,119 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\" />
+    <Content Remove="wwwroot\Admin\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+    <Folder Include="Views\Home\" />
+    <Folder Include="Models\" />
+    <Folder Include="Data\" />
+    <Folder Include="ViewModels\" />
+    <Folder Include="Views\Blog\" />
+    <Folder Include="Views\Product\" />
+    <Folder Include="Areas\" />
+    <Folder Include="wwwroot\Admin\" />
+    <Folder Include="Services\" />
+    <Folder Include="ViewModels\Categories\" />
+    <Folder Include="Areas\" />
+    <Folder Include="Areas\Admin\" />
+    <Folder Include="Areas\Admin\Controllers\" />
+    <Folder Include="Areas\Admin\Views\" />
+    <Folder Include="Areas\Admin\Views\Category\" />
+    <Folder Include="Areas\Admin\Views\Shared\" />
+    <Folder Include="Areas\Admin\Views\Blog\" />
+    <Folder Include="ViewModels\Blogs\" />
+    <Folder Include="Services\Interfaces\" />
+    <Folder Include="ViewComponents\" />
+    <Folder Include="Views\Shared\Components\" />
+    <Folder Include="Views\Shared\Components\Slider\" />
+    <Folder Include="Views\Shared\Components\Header\" />
+    <Folder Include="Areas\Admin\Views\Slider\" />
+    <Folder Include="ViewModels\Sliders\" />
+    <Folder Include="Helpers\" />
+    <Folder Include="Helpers\Extentions\" />
+    <Folder Include="ViewModels\Baskets\" />
+    <Folder Include="Views\Cart\" />
+    <Folder Include="ViewModels\Carts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Views\Home\" />
+    <None Remove="Models\" />
+    <None Remove="Data\" />
+    <None Remove="ViewModels\" />
+    <None Remove="Views\Blog\" />
+    <None Remove="Views\Product\" />
+    <None Remove="Areas\" />
+    <None Remove="Services\" />
+    <None Remove="ViewModels\Categories\" />
+    <None Remove="Areas\Admin\" />
+    <None Remove="Areas\Admin\Controllers\" />
+    <None Remove="Areas\Admin\Views\" />
+    <None Remove="Areas\Admin\Views\Category\" />
+    <None Remove="Areas\Admin\Views\Shared\" />
+    <None Remove="Areas\Admin\Views\Blog\" />
+    <None Remove="ViewModels\Blogs\" />
+    <None Remove="Services\Interfaces\" />
+    <None Remove="ViewComponents\" />
+    <None Remove="Views\Shared\Components\" />
+    <None Remove="Views\Shared\Components\Slider\" />
+    <None Remove="Views\Shared\Components\Header\" />
+    <None Remove="Areas\Admin\Views\Slider\" />
+    <None Remove="ViewModels\Sliders\" />
+    <None Remove="Helpers\" />
+    <None Remove="Helpers\Extentions\" />
+    <None Remove="ViewModels\Baskets\" />
+    <None Remove="Views\Cart\" />
+    <None Remove="ViewModels\Carts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="wwwroot\.git\config" />
+    <None Include="wwwroot\.git\HEAD" />
+    <None Include="wwwroot\.git\description" />
+    <None Include="wwwroot\.git\index" />
+    <None Include="wwwroot\.git\packed-refs" />
+    <None Include="wwwroot\.git\info\exclude" />
+    <None Include="wwwroot\.git\logs\HEAD" />
+    <None Include="wwwroot\.git\logs\refs\heads\master" />
+    <None Include="wwwroot\.git\logs\refs\remotes\origin\HEAD" />
+    <None Include="wwwroot\.git\hooks\commit-msg.sample" />
+    <None Include="wwwroot\.git\hooks\pre-rebase.sample" />
+    <None Include="wwwroot\.git\hooks\sendemail-validate.sample" />
+    <None Include="wwwroot\.git\hooks\pre-commit.sample" />
+    <None Include="wwwroot\.git\hooks\applypatch-msg.sample" />
+    <None Include="wwwroot\.git\hooks\fsmonitor-watchman.sample" />
+    <None Include="wwwroot\.git\hooks\pre-receive.sample" />
+    <None Include="wwwroot\.git\hooks\prepare-commit-msg.sample" />
+    <None Include="wwwroot\.git\hooks\post-update.sample" />
+    <None Include="wwwroot\.git\hooks\pre-merge-commit.sample" />
+    <None Include="wwwroot\.git\hooks\pre-applypatch.sample" />
+    <None Include="wwwroot\.git\hooks\pre-push.sample" />
+    <None Include="wwwroot\.git\hooks\update.sample" />
+    <None Include="wwwroot\.git\hooks\push-to-checkout.sample" />
+    <None Include="wwwroot\.git\objects\pack\pack-4a0b1b2ab8800ac4ea003d3bd5af04dc26150a9d.rev" />
+    <None Include="wwwroot\.git\objects\pack\pack-4a0b1b2ab8800ac4ea003d3bd5af04dc26150a9d.pack" />
+    <None Include="wwwroot\.git\objects\pack\pack-4a0b1b2ab8800ac4ea003d3bd5af04dc26150a9d.idx" />
+    <None Include="wwwroot\.git\refs\heads\master" />
+    <None Include="wwwroot\.git\refs\remotes\origin\HEAD" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.29" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.29" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.29">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.29">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.16" />
+  </ItemGroup>
+</Project>

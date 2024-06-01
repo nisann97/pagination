@@ -1,0 +1,21 @@
+﻿@model CategoryDetailVM
+
+
+@{
+    ViewData["Title"] = "Detail";
+
+
+}
+
+<div class="container mt-5">
+
+        <div class="form-group">
+            <label>Category</label>
+            <input asp-for="Name" type="text" class="form-control" disabled placeholder="Username">
+        </div>
+
+    @if(@Model.ProductCount>0){
+    <h1>Product count: @Model.ProductCount</h1>
+    }
+        <a asp-action="Index" class="btn btn-primary">Back</a>
+</div>
